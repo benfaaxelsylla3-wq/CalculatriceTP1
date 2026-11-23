@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import android.util.Log
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,6 +27,7 @@ class MainActivity : AppCompatActivity() {
 
         // Fonction de calcul
         fun calculer(operation: String) {
+            Log.d("TP5_DEBUG", "Opération demandée : $operation")
             val a = nombre1.text.toString().toDoubleOrNull()
             val b = nombre2.text.toString().toDoubleOrNull()
 
