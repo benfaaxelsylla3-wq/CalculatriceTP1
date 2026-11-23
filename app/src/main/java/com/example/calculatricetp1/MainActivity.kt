@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val soustraction = findViewById<Button>(R.id.btnSoustraction)
         val multiplication = findViewById<Button>(R.id.btnMultiplication)
         val division = findViewById<Button>(R.id.btnDivision)
+        val puissance = findViewById<Button>(R.id.btnPuissance)
 
         // Fonction de calcul
         fun calculer(operation: String) {
@@ -51,6 +52,7 @@ class MainActivity : AppCompatActivity() {
                 "-" -> a - b
                 "*" -> a * b
                 "/" -> a / b
+                "^" -> Math.pow(a, b)
                 else -> return
             }
 
@@ -72,6 +74,10 @@ class MainActivity : AppCompatActivity() {
 
         division.setOnClickListener {
             calculer("/")
+        }
+
+        puissance.setOnClickListener {
+            calculer("^")
         }
     }
 }

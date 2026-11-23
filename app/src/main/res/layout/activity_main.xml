@@ -55,6 +55,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Division (/)"/>
+    <Button
+        android:id="@+id/btnPuissance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Puissance (x^y)" />
 
     <TextView
         android:id="@+id/txtResultat"
