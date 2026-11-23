@@ -50,6 +50,7 @@ class MainActivity : AppCompatActivity() {
             val valeur = when (operation) {
                 "+" -> a + b
                 "-" -> a - b
+                // Correction du bogue : utiliser la multiplication et non l'addition
                 "*" -> a * b
                 "/" -> a / b
                 "^" -> Math.pow(a, b)
